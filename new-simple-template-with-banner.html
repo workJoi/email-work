@@ -3,8 +3,11 @@
 
 <head>
     <!-- Marketo Variable Definitions -->
-    <meta class="mktoString" id="buttonURL" mktoName="URL for button" default="example: https://www.newtek.com" default="https://www.newtek.com">
-    <meta class="mktoString" id="buttonText" mktoName="Text for Button" default="example: Let's Go" default="Let's Go">
+    <meta class="mktoString" id="mktButtonURL" mktoName="URL for button"  default="https://www.newtek.com" mktoModuleScope="true">
+    <meta class="mktoString" id="mktButtonText" mktoName="Text for Button"  default="Let's Go" mktoModuleScope="true">
+    <meta class="mktoText" id="mktRightside" mktoName="Text in Upper Right Corner">
+    <meta class="mktoText" id="mktBanner" mktoName="Text for Banner" >
+    <meta class="mktoColor" id="bannerColor" mktoName="Banner Color" default="#212121" mktoModuleScope="true">
     <!-- End of Marketo Variables -->
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -66,6 +69,11 @@
             padding: 0;
         }
 
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+
         img {
             border: 0;
             height: auto;
@@ -98,7 +106,12 @@
         }
 
         sup {
-            font-size: 60%;
+          font-size: 60%;
+          letter-spacing: 0px !important;
+          top: -0.2em;
+          position: relative;
+          mso-line-height-rule: exactly;
+          line-height: 0;
         }
         /**
 			* @tab Page
@@ -172,7 +185,7 @@
 
         h2 {
             /*@editable*/
-            color: #404040 !important;
+/*            color: #404040;*/
             display: block;
             /*@editable*/
             font-family: Helvetica;
@@ -428,11 +441,9 @@
 
         {
             /*@editable*/
-            color: #EB4102;
+            color: #068ed6;
             /*@editable*/
             font-weight: normal;
-            /*@editable*/
-            text-decoration: underline;
         }
 
         .bodyContent img {
@@ -637,6 +648,18 @@
         }
 
     </style>
+    <!--[if gte mso 9]>
+    <style>
+      sup {
+        font-size: 100%;
+        vertical-align: top !important;
+      }
+
+      .button a {
+        line-height: 1 !important;
+      }
+    </style>
+    <![endif]-->
 </head>
 
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
@@ -666,11 +689,11 @@
                         <tr>
                             <td align="center" valign="top">
                                 <!-- BEGIN PREHEADER // -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: none;background: #212121;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: none;background: ${bannerColor};">
                                     <tr>
-                                        <td valign="top" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px; background: #212121; min-height: 65px;" mc:edit="preheader_content00">
+                                        <td valign="top" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px; background: ${bannerColor}; min-height: 65px;" mc:edit="preheader_content00">
                                             <div class="mktoText" id="mktBanner" mktoname="mktBanner">
-                                            <h2 style="color: #75b6c9 !important; font-weight: 400; letter-spacing: 1px; margin-bottom: 0;">Welcome To My NDI<sup>®</sup>Central.com</h2>
+                                            <h2 style="color: #75b6c9 !important; font-weight: 600; letter-spacing: 1px; margin-top: 10px;">Welcome To My NDI<sup>®</sup>Central&#65279;.com</h2>
                                             <h2 style="color: white !important; font-weight: 300; letter-spacing: 1px;">Your Official Destination For All Things NDI<sup>®</sup></h2>
                                             </div>
                                         </td>
@@ -686,7 +709,9 @@
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                     <tr>
                                         <td valign="top" class="headerContent">
-                                            <img class="mktoImg" id="mktHeaderImage" mktoname="mktHeaderImage" src="http://pages.newtek.com/rs/900-QVC-131/images/my-ndi-central-header-1.jpg" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            <div class="mktoImg" id="mktHeaderImage" mktoname="Header Image" mktoImgLink="https://www.newtek.com"
+                                            mktoImgLinkTarget="_blank" mktoImgSrc="http://pages.newtek.com/rs/900-QVC-131/images/my-ndi-central-header-1.jpg"><a><img
+                                            src="http://pages.newtek.com/rs/900-QVC-131/images/my-ndi-central-header-1.jpg" /></a></div>
                                         </td>
                                     </tr>
                                 </table>
@@ -711,7 +736,7 @@
                                                 <tr>
                                                     <td align="center" style="border-radius: 26px;" bgcolor="#75b6c9">
                                                         <div>
-                                                            <a href="${buttonURL}" target="_blank" style="font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 2px; background-color: #75b6c9; letter-spacing: 1px; padding: 10px 50px; border: 1px solid #75b6c9; display: block;  font-family: Helvetica; width: 200px; max-width: 90%;" class="mktoText" id="mktButton" mktoname="mktButton">${buttonText}</a></div>
+                                                            <a href="${mktButtonURL}" target="_blank" style="font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 2px; background-color: #75b6c9; letter-spacing: 1px; padding: 10px 50px; border: 1px solid #75b6c9; display: block;  font-family: Helvetica; width: 200px; max-width: 90%;" class="mktoText" id="mktButton" mktoname="mktButton">${mktButtonText}</a></div>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -731,11 +756,11 @@
                                                 <tbody>
                                                     <tr>
                                                         <td valign="top">
-                                                            <a href="https://www.facebook.com/newtekemea/" target="_blank" style="text-decoration: none;"><img src="http://pages.newtek.com/rs/900-QVC-131/images/facebook-black-transparent-2018.png" alt="NewTek Facebook" /></a>
+                                                            <a href="https://www.facebook.com/newtekinc/" target="_blank" style="text-decoration: none;"><img src="http://pages.newtek.com/rs/900-QVC-131/images/facebook-black-transparent-2018.png" alt="NewTek Facebook" /></a>
                                                         </td>
                                                         <td width="7">&nbsp;</td>
                                                         <td valign="top">
-                                                            <a href="https://twitter.com/newtekemea" target="_blank" style="text-decoration: none;"><img src="http://pages.newtek.com/rs/900-QVC-131/images/twitter-black-transparent-2018.png" alt="NewTek Twitter" /></a>
+                                                            <a href="https://twitter.com/NewTekInc" target="_blank" style="text-decoration: none;"><img src="http://pages.newtek.com/rs/900-QVC-131/images/twitter-black-transparent-2018.png" alt="NewTek Twitter" /></a>
                                                         </td>
                                                         <td width="7">&nbsp;</td>
                                                         <td valign="top">
@@ -771,5 +796,4 @@
         </table>
     </center>
 </body>
-
 </html>
