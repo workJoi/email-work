@@ -1,0 +1,1226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="width: 100%;">
+  <head>
+    <!-- Marketo Variable Definitions -->
+    <meta class="mktoColor" id="emailBackgroundColor" mktoname="Email Background Color" default="#cdccc7" mktomodulescope="false" />
+    <meta class="mktoColor" id="headerBackgroundColor" mktoname="Module Background" default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoColor" id="headerBorderColor" mktoname="Module Border Border Color" default="#facb10" mktomodulescope="true" />
+    <meta class="mktoNumber" id="headerBorderSize" mktoname="Module Border Border Width" default="7" min="0" max="20" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="headerSpacer" mktoname="Top Spacer" default="20" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="headerSpacer2" mktoname="Spacer Below Right Image" default="8" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="headerSpacer3" mktoname="Bottom Spacer" default="20" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoImg" id="heroBackgroundImage" mktoname="Background Image" default="http://templates.marketo.net/newsletter4/bg-hero.jpg" mktomodulescope="true" />
+    <meta class="mktoColor" id="heroBackgroundColor" mktoname="Module Background" default="#f6f6f6" mktomodulescope="true" />
+    <meta class="mktoColor" id="heroButtonBackgroundColor" mktoname="Button Background Color" default="#facb10" mktomodulescope="true" />
+    <meta class="mktoColor" id="heroBorderColor" mktoname="Button Border Color" default="#facb10" mktomodulescope="true" />
+    <meta class="mktoNumber" id="heroBorderSize" mktoname="Button Border Width" default="1" min="0" max="20" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoString" id="heroLinkText" mktoname="Button Text" default="GO TO WEBSITE" mktomodulescope="true" />
+    <meta class="mktoString" id="heroLink" mktoname="Button Link" default="http://mylink" mktomodulescope="true" />
+    <meta class="mktoColor" id="titleBackgroundColor" mktoname="Module Background" default="#eeeeee" mktomodulescope="true" />
+    <meta class="mktoNumber" id="titleSpacer" mktoname="Top Spacer" default="30" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="titleSpacer2" mktoname="Spacer Below Image" default="20" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="titleSpacer3" mktoname="Spacer Below Title" default="10" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="titleSpacer4" mktoname="Spacer Below Subtitle" default="30" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoColor" id="titleButtonBackgroundColor" mktoname="Button Background Color" default="#facb10" mktomodulescope="true" />
+    <meta class="mktoColor" id="titleBorderColor" mktoname="Button Border Color" default="#facb10" mktomodulescope="true" />
+    <meta class="mktoNumber" id="titleBorderSize" mktoname="Button Border Width" default="1" min="0" max="20" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="titleSpacer5" mktoname="Bottom Spacer" default="30" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoString" id="titleLinkText" mktoname="Button Text" default="CONTACT US" mktomodulescope="true" />
+    <meta class="mktoString" id="titleLink" mktoname="Button Link" default="http://mylink" mktomodulescope="true" />
+    <meta class="mktoColor" id="twoArticlesBackgroundColor" mktoname="Module Background" default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoNumber" id="twoArticlesSpacer" mktoname="Top Spacer" default="40" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="twoArticlesSpacer2" mktoname="Spacer Below Left Image" default="30" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="twoArticlesSpacer3" mktoname="Spacer Below Left Article title" default="25" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="twoArticlesSpacer4" mktoname="Spacer Below Left Text" default="30" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoColor" id="twoArticlesButtonBackgroundColor" mktoname="Left Button Background Color" default="#facb10" mktomodulescope="true" />
+    <meta class="mktoColor" id="twoArticlesBorderColor" mktoname="Left Button Border Color" default="#facb10" mktomodulescope="true" />
+    <meta class="mktoNumber" id="twoArticlesBorderSize" mktoname="Left Button Border Width" default="1" min="0" max="20" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="twoArticlesSpacer5" mktoname="Spacer Below Right Image" default="30" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="twoArticlesSpacer6" mktoname="Spacer Below Right Article title" default="25" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="twoArticlesSpacer7" mktoname="Spacer Below Right Text" default="30" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoColor" id="twoArticlesButtonBackgroundColor2" mktoname="Right Button Background Color" default="#facb10" mktomodulescope="true" />
+    <meta class="mktoColor" id="twoArticlesBorderColor2" mktoname="Right Button Border Color" default="#facb10" mktomodulescope="true" />
+    <meta class="mktoNumber" id="twoArticlesBorderSize2" mktoname="Right Button Border Width" default="1" min="0" max="20" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="twoArticlesSpacer8" mktoname="Bottom Spacer" default="20" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoString" id="twoArticlesLinkText" mktoname="Left Button Text" default="READ MORE" mktomodulescope="true" />
+    <meta class="mktoString" id="twoArticlesLink" mktoname="Left Button Link" default="http://mylink" mktomodulescope="true" />
+    <meta class="mktoString" id="twoArticlesLinkText2" mktoname="Right Button Text" default="READ MORE" mktomodulescope="true" />
+    <meta class="mktoString" id="twoArticlesLink2" mktoname="Right Button Link" default="http://mylink" mktomodulescope="true" />
+    <meta class="mktoColor" id="textimagePostBackgroundColor" mktoname="Module Background" default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoNumber" id="textimagePostSpacer" mktoname="Top Spacer" default="30" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="textimagePostSpacer2" mktoname="Spacer Below Image" default="30" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="textimagePostSpacer3" mktoname="Spacer Below Title" default="20" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="textimagePostSpacer4" mktoname="Spacer Below Text" default="30" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoColor" id="textimagePostButtonBackgroundColor" mktoname="Button Background Color" default="#facb10" mktomodulescope="true" />
+    <meta class="mktoColor" id="textimagePostBorderColor" mktoname="Button Border Color" default="#facb10" mktomodulescope="true" />
+    <meta class="mktoNumber" id="textimagePostBorderSize" mktoname="Button Border Width" default="1" min="0" max="20" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="textimagePostSpacer5" mktoname="Bottom Spacer" default="30" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoString" id="textimagePostLinkText" mktoname="Button Text" default="READ MORE" mktomodulescope="true" />
+    <meta class="mktoString" id="textimagePostLink" mktoname="Button Link" default="http://mylink" mktomodulescope="true" />
+    <meta class="mktoColor" id="teamBackgroundColor" mktoname="Module Background" default="#dddddd" mktomodulescope="true" />
+    <meta class="mktoNumber" id="teamSpacer" mktoname="Top Spacer" default="30" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="teamSpacer2" mktoname="Bottom Spacer" default="10" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoColor" id="teamBackgroundColor2" mktoname="Left Boxed content" default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoColor" id="teamBackgroundColor3" mktoname="Center Boxed content" default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoColor" id="teamBackgroundColor4" mktoname="Right Boxed content" default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoColor" id="contactsBackgroundColor" mktoname="Module Background" default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoNumber" id="contactsSpacer" mktoname="Top Spacer" default="30" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="contactsSpacer2" mktoname="Spacer Below Title" default="10" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="contactsSpacer3" mktoname="Spacer Below Subtitle" default="20" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="contactsSpacer4" mktoname="Bottom Spacer" default="20" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoString" id="contactsLinkText" mktoname="Center Link Text" default="person@example.com" mktomodulescope="true" />
+    <meta class="mktoString" id="contactsLink" mktoname="Center Link" default="http://mylink" mktomodulescope="true" />
+    <meta class="mktoString" id="contactsLinkText2" mktoname="Center Link Text" default="person@example.com" mktomodulescope="true" />
+    <meta class="mktoString" id="contactsLink2" mktoname="Center Link" default="http://mylink" mktomodulescope="true" />
+    <meta class="mktoColor" id="separatorBackgroundColor" mktoname="Module Background" default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoColor" id="separatorColor" mktoname="Separator Color" default="#facb10" mktomodulescope="true" />
+    <meta class="mktoNumber" id="separatorSize" mktoname="Separator Width" default="1" min="0" max="20" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoColor" id="freeImageBackgroundColor" mktoname="Module Background" default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoNumber" id="freeImageSpacer" mktoname="Top Spacer" default="20" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="freeImageSpacer2" mktoname="Bottom Spacer" default="20" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoColor" id="freeTextBackgroundColor" mktoname="Module Background" default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoNumber" id="freeTextSpacer" mktoname="Top Spacer" default="20" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="freeTextSpacer2" mktoname="Bottom Spacer" default="20" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoColor" id="callToActionBackgroundColor" mktoname="Module Background" default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoNumber" id="callToActionSpacer" mktoname="Top Spacer" default="20" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoColor" id="callToActionButtonBackgroundColor" mktoname="Button Background Color" default="#facb10" mktomodulescope="true" />
+    <meta class="mktoColor" id="callToActionBorderColor" mktoname="Button Border Color" default="#facb10" mktomodulescope="true" />
+    <meta class="mktoNumber" id="callToActionBorderSize" mktoname="Button Border Width" default="1" min="0" max="20" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="callToActionSpacer2" mktoname="Bottom Spacer" default="20" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoString" id="callToActionLinkText" mktoname="Button Text" default="CALL TO ACTION" mktomodulescope="true" />
+    <meta class="mktoString" id="callToActionLink" mktoname="Button Link" default="http://mylink" mktomodulescope="true" />
+    <meta class="mktoColor" id="socialBackgroundColor" mktoname="Module Background" default="#ffffff" mktomodulescope="true" />
+    <meta class="mktoNumber" id="socialSpacer" mktoname="Top Spacer" default="15" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoNumber" id="socialSpacer2" mktoname="Bottom Spacer" default="15" min="1" max="300" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoString" id="socialLink" mktoname="Facebook Icon Link" default="http://mylink" mktomodulescope="true" />
+    <meta class="mktoString" id="socialLink2" mktoname="Twitter Icon Link" default="http://mylink" mktomodulescope="true" />
+    <meta class="mktoString" id="socialLink3" mktoname="LinkedIn Icon Link" default="http://mylink" mktomodulescope="true" />
+    <meta class="mktoString" id="socialLink4" mktoname="Pinterest Icon Link" default="http://mylink" mktomodulescope="true" />
+    <meta class="mktoString" id="socialLink5" mktoname="Mail Icon Link" default="#" mktomodulescope="true" />
+    <meta class="mktoColor" id="footerBackgroundColor" mktoname="Module Background" default="#f3f3f3" mktomodulescope="true" />
+    <meta class="mktoColor" id="footerBorderColor" mktoname="Separator Border Color" default="#e6e6e6" mktomodulescope="true" />
+    <meta class="mktoNumber" id="footerBorderSize" mktoname="Separator Border Width" default="1" min="0" max="20" units="px" step="1" mktomodulescope="true" />
+    <meta class="mktoString" id="unsubLink" mktoname="Unsubscribe Link" default="{{system.unsubscribeLink}}" mktomodulescope="true" />
+    <!-- Other Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
+    <!--[if mso]>
+		<style type='text/css'>
+		.primary-font {
+		font-family: "Arial Narrow", sans-serif !important;
+		}
+		</style>
+		<![endif]-->
+    <!--[if mso]>
+		<style type='text/css'>
+		.secondary-font {
+		font-family: Arial, sans-serif !important;
+		}
+		</style>
+		<![endif]-->
+    <style>
+			/*startcommon*/
+			@media only screen and (max-width: 640px) {
+				table.m_boxing{
+					width: 100% !important;
+				}
+			}
+			/*endcommon*/
+		</style>
+    <style media="all">
+/* CLIENT-SPECIFIC STYLES */
+#outlook a {
+  padding: 0;
+}
+/* Force Outlook to provide a "view in browser" message */
+.ReadMsgBody {
+  width: 100%;
+}
+.ExternalClass {
+  width: 100%;
+}
+/* Force Hotmail to display emails at full width */
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+/* Force Hotmail to display normal line spacing */
+/* iOS BLUE LINKS */
+.appleBody a {
+  color: .m_000;
+  text-decoration: none;
+}
+.appleFooter a {
+  color: .m_000;
+  text-decoration: none;
+}
+@-ms-viewport {
+    width: device-width;
+}
+
+</style>
+    <style media="all">
+@media only screen and (max-width: 640px) {
+
+/*starttablet*/
+
+	.mktoVideoThumbnail{
+		width: 100% !important;
+		height: auto!important;
+		max-height:inherit!important;
+		min-height:inherit!important;
+	}
+
+body {
+	width: auto !important;
+}
+
+table.table600 {
+	width: 450px !important;
+}
+
+table.table-inner{
+	width: 86% !important;
+}
+
+table.table1-2{
+	width: 47% !important;
+	clear: both;
+}
+
+table.table1-3{
+	width: 29.4% !important;
+}
+
+table.table1-4{
+	width: 100% !important;
+	text-align: left !important;
+}
+
+table.table2-3{
+	width: 64% !important;
+	text-align: center !important;
+}
+
+table.table3-3{
+	width: 100% !important;
+	text-align: center !important;
+	clear: both;
+}
+
+table.footer-logo{
+	width: 10% !important;
+	text-align: right !important;
+}
+
+td.outer{
+	min-width: 0 !important;
+}
+
+td.stack{
+	padding-bottom: 40px !important;
+}
+
+.stack-tablet {
+	padding-bottom: 20px !important;
+	overflow: visible !important;
+	float: none !important;
+	mso-hide: none !important;
+	display: block !important;
+}
+
+img.mobile-img{
+	width: 100% !important;
+	height: auto !important;
+}
+
+td.center-tablet{
+	text-align: center !important;
+}
+
+td.hide-tablet{
+	display: none !important;
+}
+
+table.footer-column{
+	width: 47% !important;
+	text-align: left !important;
+}
+
+tr.stack-tablet{
+	padding-bottom: 0 !important;
+	display: block !important;
+}
+
+.respimage,
+.m_free-image .table600 {
+	width: 450px !important;
+	height: auto;
+}
+
+.m_team .spacer {
+	width: 26px;
+}
+
+.m_header td.center-tablet {
+	text-align: center !important;
+}
+
+.m_header td a {
+	margin-top: 0px !important;
+}
+
+.m_header .cta table {
+	float: none !important;
+	margin-top: 0 !important;
+	margin-right: auto !important;
+	margin-bottom: 0 !important;
+	margin-left: auto !important;
+}
+
+.m_header .social {
+	text-align: center !important;
+}
+
+.m_two-articles .table1-2 {
+	width: 100% !important;
+}
+
+.m_two-articles img {
+	width: 100% !important;
+	height: auto;
+}
+
+.m_two-articles .stack-tablet {
+	height: 40px;
+}
+
+.m_contacts .table1-3 {
+	width: 100% !important;
+	clear: both;
+}
+
+.m_footer .table1-2 {
+	width: 100% !important;
+	clear: both;
+}
+
+.m_footer .text,
+.m_footer .unsub {
+	text-align: center !important;
+}
+
+/*endtablet*/
+
+}
+
+@media only screen and (max-width: 479px) {
+
+/*startmobile*/
+
+body {
+	width: auto !important;
+}
+
+table.table600{
+	width: 290px !important;
+}
+
+table.table-inner{
+	width: 80% !important;
+	float: none !important;
+}
+
+table.table1-2{
+	width: 100% !important;
+	clear: both;
+}
+
+table.table1-3{
+	width: 100% !important;
+	clear: both;
+}
+
+table.table1-4{
+	width: 100% !important;
+	text-align: center !important;
+}
+
+table.table2-3{
+	width: 100% !important;
+	text-align: center !important;
+}
+
+table.table3-3{
+	width: 100% !important;
+	text-align: center !important;
+	clear: both;
+}
+
+table.footer-logo{
+	width: 60% !important;
+	text-align: center !important;
+}
+
+td.outer{
+	min-width: 0 !important;
+}
+
+td.td3-1{
+	width: 60% !important;
+	text-align: center !important;
+}
+
+.stack-smartphone {
+	padding-bottom: 20px !important;
+	overflow: visible !important;
+	float: none !important;
+	display: block !important;
+	mso-hide: none !important;
+}
+
+td.center-smartphone{
+	text-align: center !important;
+}
+
+img.mobile-img{
+	width: 100% !important;
+}
+
+td.center-tablet{
+	text-align: center !important;
+}
+
+td.hide-smartphone{
+	display: none !important;
+}
+
+table.footer-column{
+	width: 100% !important;
+	text-align: center !important;
+}
+
+.respimage,
+.m_free-image .table600 {
+	width: 290px !important;
+	height: auto;
+}
+
+/*endmobile*/
+
+}
+
+
+</style>
+  </head>
+  <body style="margin-bottom: 0; -webkit-text-size-adjust: 100%; padding-bottom: 0; min-width: 100%; margin-top: 0; margin-right: 0; -ms-text-size-adjust: 100%; margin-left: 0; padding-top: 0; padding-right: 0; padding-left: 0; width: 100%;">
+    <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;">
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+    <!-- Outer table START -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;">
+      <tbody>
+        <tr>
+          <td class="outer" valign="top" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; min-width: 600px; border-collapse: collapse; background-color: ${emailBackgroundColor};">
+            <table width="640" align="center" id="boxing" border="0" cellpadding="0" cellspacing="0" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;" class="m_boxing">
+              <tbody>
+                <tr>
+                  <td class="mktoContainer boxedbackground" id="template-wrapper" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                    <table id="header" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule m_header" mktoname="Header">
+                      <tbody>
+                        <tr>
+                          <td class="bordered" style="background-size: cover;-moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none;border-top-width:${headerBorderSize};border-top-style: solid;border-top-color:${headerBorderColor};border-collapse: collapse;background-color:${headerBackgroundColor};border-left-color:${headerBorderColor};border-bottom-color:${headerBorderColor};border-right-color:${headerBorderColor};border-left-width:${headerBorderSize};border-bottom-width:${headerBorderSize};border-right-width:${headerBorderSize};" bgcolor="${headerBackgroundColor}" valign="top">
+                            <table class="table600" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                              <tbody>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${headerSpacer};font-size:${headerSpacer};" height="${headerSpacer}">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                    <center>
+                                      <table class="table3-3" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="left" border="0" cellpadding="0" cellspacing="0" width="220">
+                                        <tbody>
+                                          <tr>
+                                            <td class="center-tablet logo" style="-moz-hyphens: none; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -ms-text-size-adjust: 100%; hyphens: none; width: 100%; font-weight: normal; font-size: 12px; text-align: left; border-collapse: collapse;">
+                                              <div style="display:inline-block" class="mktoImg" mktoname="Logo" id="logo" mktolockimgsize="true" mktolockimgstyle="true">
+                                                <a><img src="http://pages.newtek.com/rs/900-QVC-131/images/NewTek_logo_blackblue.jpg" style="-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; max-width: 100%; line-height: 100%; width: 173px; display: inline-block; height: auto;" height="auto" width="173" /></a>
+                                              </div> </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table class="table3-3" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="right" border="0" cellpadding="0" cellspacing="0" width="340">
+                                        <tbody>
+                                          <tr class="stack-tablet" style="max-height:0px;overflow:hidden;padding-left: 0; overflow: hidden; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; float: left; margin-top: 0; margin-right: 0; margin-bottom: 0; mso-hide: all; display: none;">
+                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">&nbsp;</td>
+                                          </tr>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${headerSpacer2};font-size:${headerSpacer2};" height="${headerSpacer2}">&nbsp;</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="primary-font center-tablet links" style="-moz-hyphens: none; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -ms-text-size-adjust: 100%; hyphens: none; width: 100%; font-weight: normal; text-align: right; border-collapse: collapse; font-family:'Roboto Condensed','Arial Narrow', Arial, serif; font-size: 17px;" valign="middle">
+                                              <div class="mktoText" mktoname="Right Header Links" id="headerLinks">
+                                                <p><a href="http://pages.newtek.com/-APAC-Reseller-Event-LP.html" style="text-size-adjust: 100%; font-family: arial, helvetica, sans-serif; color: #3399cc; display: inline-block; text-decoration: none;" target="_blank">Register</a>&nbsp;</p>
+                                              </div></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </center> </td>
+                                </tr>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${headerSpacer3};font-size:${headerSpacer3};" height="${headerSpacer3}">&nbsp;</td>
+                                </tr>
+                              </tbody>
+                            </table> </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table id="hero" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule m_hero" mktoname="Hero">
+                      <tbody>
+                        <tr>
+                          <td class="background" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-bottom: 0;padding-left: 0;padding-top: 0;padding-right: 0;background: no-repeat center/cover url('${heroBackgroundImage}') ${heroBackgroundColor};border-collapse: collapse;" background="${heroBackgroundImage}" bgcolor="${heroBackgroundColor}" valign="top" width="600">
+                            <center>
+                              <!--[if gte mso 9]>
+		                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;height:607px">
+							<v:fill type="frame" src="${heroBackgroundImage}" color="${heroBackgroundColor}" />
+							<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+							<![endif]-->
+                              <table class="table600" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;" height="600" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                                <tbody>
+                                  <tr>
+                                    <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                      <table class="contents" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="left" border="0" cellpadding="0" cellspacing="0" width="300">
+                                        <tbody>
+                                          <tr>
+                                            <td class="" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; text-align: left; border-collapse: collapse;" height="16">&nbsp;</td>
+                                          </tr>
+                                          <tr style="outline: medium none;">
+                                            <td class="primary-font title" style="hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;-ms-text-size-adjust: 100%;text-align: left;color: #FFF;font-size: 51px;line-height: 53px;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;border-collapse: collapse;">
+                                              <div class="mktoText" mktoname="Main Title" id="mainTitle">
+                                                <div>
+                                                  <span style="font-size: 38px;"><strong>2019 EMEA Reseller Meeting</strong></span>
+                                                </div>
+                                              </div> </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; text-align: left; border-collapse: collapse;" height="5">&nbsp;</td>
+                                          </tr>
+                                          <tr style="outline: medium none;">
+                                            <td class="primary-font subtitle" style="hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;-ms-text-size-adjust: 100%;text-align: left;color: #facb10;font-size: 18px;line-height: 25px;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;border-collapse: collapse;">
+                                              <div class="mktoText" mktoname="Subtitle" id="subtitle">
+                                                <p><br /></p>
+                                              </div> </td>
+                                          </tr>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; text-align: left; border-collapse: collapse;" height="40">&nbsp;</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="cta" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; text-align: left; border-collapse: collapse;">
+                                              <center>
+                                                <table style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;" align="left" border="0" cellpadding="0" cellspacing="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; text-align: left; border-collapse: collapse;" align="center" bgcolor="${heroButtonBackgroundColor}"> <a href="${heroLink}" target="_blank" class="primary-font button" style="-webkit-text-size-adjust:
+100%;-ms-text-size-adjust: 100%;-webkit-background-clip: padding-box;-moz-background-clip: padding;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;color: #ffffff;padding-top: 12px;padding-right: 18px;padding-bottom: 12px;padding-left:
+18px;border-top-width:${heroBorderSize};border-right-width:${heroBorderSize};border-bottom-width:${heroBorderSize};border-left-width:${heroBorderSize};background-clip: padding-box;border-right-style: solid;border-bottom-style: solid;border-left-style:
+solid;border-top-color:${heroBorderColor};border-right-color:${heroBorderColor};border-bottom-color:${heroBorderColor};border-left-color:${heroBorderColor};display: inline-block;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-top-style: solid;text-decoration: none;font-size: 20px;background-color:${heroButtonBackgroundColor};">${heroLinkText}</a> </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </center> </td>
+                                          </tr>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; text-align: left; border-collapse: collapse;" height="126">&nbsp;</td>
+                                          </tr>
+                                        </tbody>
+                                      </table> </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!--[if gte mso 9]>
+		                    </v:textbox>
+		                    </v:rect>
+		                    <![endif]-->
+                            </center></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table id="title" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule m_title" mktoname="Title">
+                      <tbody>
+                        <tr>
+                          <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;text-align: center;border-collapse: collapse;background-color:${titleBackgroundColor};" bgcolor="${titleBackgroundColor}" valign="top">
+                            <table class="table600" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                              <tbody>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;text-align: center;border-collapse: collapse;line-height:${titleSpacer};font-size:${titleSpacer};" height="${titleSpacer}">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; text-align: center; border-collapse: collapse;">
+                                    <center>
+                                      <table class="table3-3" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="600">
+                                        <tbody>
+                                          <tr>
+                                            <td class="primary-font icon" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;text-align: center;border-collapse: collapse;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;">
+                                              <div style="display:inline-block" class="mktoImg" mktoname="Icon" id="icon" mktolockimgstyle="true">
+                                                <a><img style="-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; width: auto; height: auto; max-width: 100%; line-height: 100%; display: inline;" /></a>
+                                              </div> </td>
+                                          </tr>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;text-align: center;border-collapse: collapse;line-height:${titleSpacer2};font-size:${titleSpacer2};" height="${titleSpacer2}">&nbsp;</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="primary-font title" style="-moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none;text-align: center;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;color: #2c4f5c;font-size: 30px;border-collapse: collapse;">
+                                              <div class="mktoText" mktoname="Title" id="title2">
+                                                <p><span style="color: #3399cc; font-size: 30px; font-family: arial, helvetica, sans-serif;">EMEA Reseller Meeting<br />17<sup>th</sup> – 19<sup>th</sup> June 2019, Budapest</span></p>
+                                              </div> </td>
+                                          </tr>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;text-align: center;border-collapse: collapse;line-height:${titleSpacer3};font-size:${titleSpacer3};" height="${titleSpacer3}">&nbsp;</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="primary-font subtitle" style="-moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none;text-align: center;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;color: #666;border-collapse: collapse;">
+                                              <div class="mktoText" mktoname="Subtitle" id="subtitle2">
+                                                <p style="text-align: left;"><span style="color: #404250; font-size: 16px; font-family: arial, helvetica, sans-serif;">We are delighted to invite you to the 2019 EMEA Reseller Event in Budapest. This year the event will have a more technical focus as well as a review of all recent product announcements and of course, we will share our vision of the future.</span></p>
+                                                <p style="text-align: left;"><span style="color: #404250; font-size: 16px; font-family: arial, helvetica, sans-serif;">The event will begin with a Welcome Reception at 19:00 on Monday 17th June. <br /> <br /> Whether you are technical or in sales, don’t miss this event.<br /> </span></p>
+                                              </div> </td>
+                                          </tr>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;text-align: center;border-collapse: collapse;line-height:${titleSpacer4};font-size:${titleSpacer4};" height="${titleSpacer4}">&nbsp;</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="cta" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; text-align: center; border-collapse: collapse;">
+                                              <center>
+                                                <table style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; text-align: center; border-collapse: collapse;" align="center" bgcolor="${titleButtonBackgroundColor}"> <a href="${titleLink}" target="_blank" class="primary-font button" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;-webkit-background-clip: padding-box;font-size: 14px;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;color: #ffffff;padding-top: 12px;padding-right: 18px;padding-bottom: 12px;padding-left:
+18px;border-top-width:${titleBorderSize};border-right-width:${titleBorderSize};border-bottom-width:${titleBorderSize};border-left-width:${titleBorderSize};background-clip: padding-box;border-right-style: solid;border-bottom-style: solid;border-left-style:
+solid;border-top-color:${titleBorderColor};border-right-color:${titleBorderColor};border-bottom-color:${titleBorderColor};border-left-color:${titleBorderColor};display: inline-block;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;-moz-background-clip: padding;border-top-style: solid;text-decoration: none;background-color:${titleButtonBackgroundColor};">${titleLinkText}</a> </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </center> </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </center> </td>
+                                </tr>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;text-align: center;border-collapse: collapse;line-height:${titleSpacer5};font-size:${titleSpacer5};" height="${titleSpacer5}">&nbsp;</td>
+                                </tr>
+                              </tbody>
+                            </table> </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table id="two-articles" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule m_two-articles" mktoname="Two-articles">
+                      <tbody>
+                        <tr>
+                          <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;background-color:${twoArticlesBackgroundColor};" bgcolor="${twoArticlesBackgroundColor}" valign="top">
+                            <table class="table600" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                              <tbody>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${twoArticlesSpacer};font-size:${twoArticlesSpacer};" height="${twoArticlesSpacer}">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                    <center>
+                                      <table class="table1-2" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="left" border="0" cellpadding="0" cellspacing="0" width="270">
+                                        <tbody>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                              <table class="contents" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                  <tr>
+                                                    <td class="photo" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                                      <div style="display:inline-block" class="mktoImg" mktoname="Photo" id="photo" mktolockimgsize="true" mktolockimgstyle="true">
+                                                        <a><img src="http://pages.newtek.com/rs/900-QVC-131/images/APAC-Reseller-NDI-270x156.jpg" style="-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; display: block; max-width: 100%; line-height: 100%; height: auto; width: 270px;" height="auto" width="270" alt="APAC-Reseller-NDI-270x156.jpg" /></a>
+                                                      </div> </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${twoArticlesSpacer2};font-size:${twoArticlesSpacer2};" height="${twoArticlesSpacer2}">&nbsp;</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="primary-font title" style="-moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none;text-align: left;font-size: 20px;color: #2c4f5c;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;border-collapse: collapse;">
+                                                      <div class="mktoText" mktoname="Chatrium Hotel Riverside, Bangkok" id="articleTitle">
+                                                        <p><strong><span style="color: #404250; font-size: 18px; font-family: arial, helvetica, sans-serif;">Approachable Technology - Affordable Implementation</span></strong></p>
+                                                      </div> </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${twoArticlesSpacer3};font-size:${twoArticlesSpacer3};" height="${twoArticlesSpacer3}">&nbsp;</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="secondary-font text" style="-moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none;font-family:'Lato', Arial, sans-serif;font-size: 14px;line-height: 25px;color: #666;border-collapse: collapse;">
+                                                      <div class="mktoText" mktoname="Left Text" id="text">
+                                                        <p><span style="color: #404250; font-size: 16px; font-family: arial, helvetica, sans-serif;">You have an extraordinary opportunity to lead the transformation for your customers to an all IP workflow, and we want to help you seize this moment. We have planned an exceptional line-up of educational materials, from how to maximise the business opportunities NewTek solutions offer, to how to build a large NDI<sup>®</sup> network.</span></p>
+                                                      </div> </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${twoArticlesSpacer4};font-size:${twoArticlesSpacer4};" height="${twoArticlesSpacer4}">&nbsp;</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="cta" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                                      <table style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="left" border="0" cellpadding="0" cellspacing="0">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;" align="center" bgcolor="${twoArticlesButtonBackgroundColor}"> <a href="${twoArticlesLink}" target="_blank" class="primary-font button" style="-webkit-text-size-adjust:
+100%;-ms-text-size-adjust: 100%;-webkit-background-clip: padding-box;font-size: 14px;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;color: #ffffff;padding-top: 12px;padding-right: 18px;padding-bottom: 12px;padding-left:
+18px;border-top-width:${twoArticlesBorderSize};border-right-width:${twoArticlesBorderSize};border-bottom-width:${twoArticlesBorderSize};border-left-width:${twoArticlesBorderSize};background-clip: padding-box;border-right-style: solid;border-bottom-style: solid;border-left-style:
+solid;border-top-color:${twoArticlesBorderColor};border-right-color:${twoArticlesBorderColor};border-bottom-color:${twoArticlesBorderColor};border-left-color:${twoArticlesBorderColor};display: inline-block;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;-moz-background-clip: padding;border-top-style: solid;text-decoration:
+none;background-color:${twoArticlesButtonBackgroundColor};">${twoArticlesLinkText}</a> </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table> </td>
+                                                  </tr>
+                                                  <tr class="stack-tablet" style="max-height:0px;overflow:hidden;padding-left: 0; overflow: hidden; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; float: left; margin-top: 0; margin-right: 0; margin-bottom: 0; mso-hide: all; display: none;">
+                                                    <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">&nbsp;</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table> </td>
+                                          </tr>
+                                          <tr class="stack-smartphone" style="max-height:0px;overflow:hidden;padding-left: 0; overflow: hidden; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; float: left; margin-top: 0; margin-right: 0; margin-bottom: 0; mso-hide: all; display: none;">
+                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">&nbsp;</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table class="table1-2" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="right" border="0" cellpadding="0" cellspacing="0" width="270">
+                                        <tbody>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                              <table class="contents" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0">
+                                                <tbody>
+                                                  <tr>
+                                                    <td class="photo" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                                      <div style="display:inline-block" class="mktoImg" mktoname="Photo" id="photo2" mktolockimgsize="true" mktolockimgstyle="true">
+                                                        <a><img src="http://pages.newtek.com/rs/900-QVC-131/images/InAvate-Image.jpg" style="-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; display: block; max-width: 100%; line-height: 100%; height: auto; width: 270px;" height="auto" width="270" alt="InAvate-Image.jpg" /></a>
+                                                      </div> </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${twoArticlesSpacer5};font-size:${twoArticlesSpacer5};" height="${twoArticlesSpacer5}">&nbsp;</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="primary-font title" style="-moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none;text-align: left;font-size: 20px;color: #2c4f5c;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;border-collapse: collapse;">
+                                                      <div class="mktoText" mktoname="Right Article title" id="articleTitle2">
+                                                        <p><strong><span style="color: #404250; font-size: 18px; font-family: arial, helvetica, sans-serif;">Adaptable Workflow -<br />Available Today</span></strong></p>
+                                                      </div> </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${twoArticlesSpacer6};font-size:${twoArticlesSpacer6};" height="${twoArticlesSpacer6}">&nbsp;</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="secondary-font text" style="-moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none;font-family:'Lato', Arial, sans-serif;font-size: 14px;line-height: 25px;color: #666;border-collapse: collapse;">
+                                                      <div class="mktoText" mktoname="Right Text" id="text2">
+                                                        <p><span style="color: #404250; font-size: 16px; font-family: arial, helvetica, sans-serif;">Companies like InAvate customize their NewTek IP Series to maximize its advanced, built-in capabilities for maximum creative firepower. At least 24 hybrid IP/SDI feeds are switched during a typical tournament. IP Series can handle 44 per Video Mix Engine VMC1. The IP Series gives the production crew super powers. </span></p>
+                                                      </div> </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${twoArticlesSpacer7};font-size:${twoArticlesSpacer7};" height="${twoArticlesSpacer7}">&nbsp;</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="cta" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                                      <table style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="left" border="0" cellpadding="0" cellspacing="0">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;" align="center" bgcolor="${twoArticlesButtonBackgroundColor2}"> <a href="${twoArticlesLink2}" target="_blank" class="primary-font button" style="-webkit-text-size-adjust:
+100%;-ms-text-size-adjust: 100%;-webkit-background-clip: padding-box;font-size: 14px;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;color: #ffffff;padding-top: 12px;padding-right: 18px;padding-bottom: 12px;padding-left:
+18px;border-top-width:${twoArticlesBorderSize2};border-right-width:${twoArticlesBorderSize2};border-bottom-width:${twoArticlesBorderSize2};border-left-width:${twoArticlesBorderSize2};background-clip: padding-box;border-right-style: solid;border-bottom-style: solid;border-left-style:
+solid;border-top-color:${twoArticlesBorderColor2};border-right-color:${twoArticlesBorderColor2};border-bottom-color:${twoArticlesBorderColor2};border-left-color:${twoArticlesBorderColor2};display: inline-block;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;-moz-background-clip: padding;border-top-style: solid;text-decoration:
+none;background-color:${twoArticlesButtonBackgroundColor2};">${twoArticlesLinkText2}</a> </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table> </td>
+                                                  </tr>
+                                                  <tr class="stack-tablet" style="max-height:0px;overflow:hidden;padding-left: 0; overflow: hidden; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; float: left; margin-top: 0; margin-right: 0; margin-bottom: 0; mso-hide: all; display: none;">
+                                                    <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">&nbsp;</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table> </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </center> </td>
+                                </tr>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${twoArticlesSpacer8};font-size:${twoArticlesSpacer8};" height="${twoArticlesSpacer8}">&nbsp;</td>
+                                </tr>
+                              </tbody>
+                            </table> </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table id="teamd61bb030-a5e1-4fc7-b1c8-efc6f1c505b6" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule m_team" mktoname="Team">
+                      <tbody>
+                        <tr>
+                          <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;background-color:${teamBackgroundColor};" bgcolor="${teamBackgroundColor}" valign="top">
+                            <table class="table600" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                              <tbody>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${teamSpacer};font-size:${teamSpacer};" height="${teamSpacer}">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                    <center>
+                                      <table class="table3-3" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="600">
+                                        <tbody>
+                                          <tr>
+                                            <td class="primary-font title" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;margin-bottom: 0;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;margin-left: 0;font-size: 24px;text-align: center;padding-top: 20px;padding-right: 0;padding-bottom: 0;padding-left: 0;margin-top: 20px;margin-right: 0;color: #2c4f5c;border-collapse: collapse;">
+                                              <div class="mktoText" mktoname="Title" id="title4d61bb030-a5e1-4fc7-b1c8-efc6f1c505b6">
+                                                <p><span style="font-family: helvetica, arial, sans-serif; color: #3399cc;">EMEA NewTek Team</span></p>
+                                              </div></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </center> </td>
+                                </tr>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${teamSpacer2};font-size:${teamSpacer2};" height="${teamSpacer2}">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                    <center>
+                                      <table class="table3-3" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="600">
+                                        <tbody>
+                                          <tr>
+                                            <td class="secondary-font subtitle" style="hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;-ms-text-size-adjust: 100%;font-family:'Lato', Arial, sans-serif;color: #2c4f5c;font-size: 14px;line-height: 23px;text-align: center;border-collapse: collapse;">
+                                              <div class="mktoText" mktoname="Subtitle" id="subtitle3d61bb030-a5e1-4fc7-b1c8-efc6f1c505b6">
+                                                <div>
+                                                  <span style="font-family: helvetica, arial, sans-serif;">Do you want to add anything here?</span>
+                                                </div>
+                                              </div></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </center> </td>
+                                </tr>
+                                <tr>
+                                  <td class="padding-y" style="-moz-hyphens: none; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -ms-text-size-adjust: 100%; hyphens: none; padding-top: 30px; padding-bottom: 40px; padding-right: 0; padding-left: 0; border-collapse: collapse;">
+                                    <center>
+                                      <table class="table1-3" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="left" border="0" cellpadding="0" cellspacing="0" width="173">
+                                        <tbody>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;background-color:${teamBackgroundColor2};" bgcolor="${teamBackgroundColor2}">
+                                              <table class="contents" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                                      <center>
+                                                        <div style="display:inline-block" class="mktoImg mobile-img" mktoname="Team Member 1" id="teamMember1d61bb030-a5e1-4fc7-b1c8-efc6f1c505b6" mktolockimgsize="true" mktolockimgstyle="true">
+                                                          <a><img src="http://pages.newtek.com/rs/900-QVC-131/images/Jane-cropped-200x200.png" alt="Image Jane Johnston" class="mobile-img" style="-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; display: block; max-width: 100%; line-height: 100%; height: auto; width: 173px;" height="auto" width="173" /></a>
+                                                        </div>
+                                                      </center></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="primary-font name" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;font-size: 18px;color: #2c4f5c;padding-top: 15px;padding-right: 0;padding-bottom: 10px;padding-left: 0;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;font-weight: bold;text-align: center;border-collapse: collapse;">
+                                                      <div class="mktoText" mktoname="Left Person Name" id="personNamed61bb030-a5e1-4fc7-b1c8-efc6f1c505b6">
+                                                        <div>
+                                                          <span style="color: #404250; font-family: helvetica, arial, sans-serif;">Jane Johnston</span>
+                                                        </div>
+                                                      </div></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="secondary-font contacts" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-left: 10px;font-family:'Lato', Arial, sans-serif;line-height: 20px;text-align: center;color: #666666;padding-top: 0;padding-right: 10px;padding-bottom: 20px;font-size: 14px;border-collapse: collapse;">
+                                                      <div class="mktoText" mktoname="Left Person Info" id="personInfod61bb030-a5e1-4fc7-b1c8-efc6f1c505b6">
+                                                        <div>
+                                                          <span style="font-family: helvetica, arial, sans-serif;">Director, International Demand Generation</span>
+                                                        </div>
+                                                      </div></td>
+                                                  </tr>
+                                                </tbody>
+                                              </table> </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table class="spacer" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="left" border="0" cellpadding="0" cellspacing="0" width="40">
+                                        <tbody>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;" height="40" width="100%"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table class="table1-3" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="left" border="0" cellpadding="0" cellspacing="0" width="173">
+                                        <tbody>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                              <table style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;background-color:${teamBackgroundColor3};" bgcolor="${teamBackgroundColor3}">
+                                                      <table class="contents" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                                              <center>
+                                                                <div style="display:inline-block" class="mktoImg mobile-img" mktoname="Team Member 2" id="teamMember2d61bb030-a5e1-4fc7-b1c8-efc6f1c505b6" mktolockimgsize="true" mktolockimgstyle="true">
+                                                                  <a><img src="http://pages.newtek.com/rs/900-QVC-131/images/FPO.png" class="mobile-img" style="-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; display: block; max-width: 100%; line-height: 100%; height: auto; width: 173px;" height="auto" width="173" /></a>
+                                                                </div>
+                                                              </center></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="primary-font name" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;font-size: 18px;color: #2c4f5c;padding-top: 15px;padding-right: 0;padding-bottom: 10px;padding-left: 0;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;font-weight: bold;text-align: center;border-collapse: collapse;">
+                                                              <div class="mktoText" mktoname="Center Person Name" id="personName2d61bb030-a5e1-4fc7-b1c8-efc6f1c505b6">
+                                                                <div>
+                                                                  <span style="font-family: helvetica, arial, sans-serif; color: #404250;">Massimo Dolce</span>
+                                                                </div>
+                                                              </div></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="secondary-font contacts" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-left: 10px;font-family:'Lato', Arial, sans-serif;line-height: 20px;text-align: center;color: #666666;padding-top: 0;padding-right: 10px;padding-bottom: 20px;font-size: 14px;border-collapse: collapse;">
+                                                              <div class="mktoText" mktoname="Center Person Info" id="personInfo2d61bb030-a5e1-4fc7-b1c8-efc6f1c505b6">
+                                                                <div>
+                                                                  <span style="font-family: helvetica, arial, sans-serif;"></span>
+                                                                  <span style="font-family: helvetica, arial, sans-serif;">Director of Sales, EMEA</span>
+                                                                </div>
+                                                              </div></td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table> </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table> </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="left" border="0" cellpadding="0" cellspacing="0" width="1">
+                                        <tbody>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;" height="40" width="100%"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table class="table1-3" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="right" border="0" cellpadding="0" cellspacing="0" width="173">
+                                        <tbody>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                              <table class="contents" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;background-color:${teamBackgroundColor4};" bgcolor="${teamBackgroundColor4}">
+                                                      <table style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                                              <center>
+                                                                <div style="display:inline-block" class="mktoImg mobile-img" mktoname="Team Member 3" id="teamMember3d61bb030-a5e1-4fc7-b1c8-efc6f1c505b6" mktolockimgsize="true" mktolockimgstyle="true">
+                                                                  <a><img src="http://pages.newtek.com/rs/900-QVC-131/images/Jane-Johnston-2016-200x200.png" class="mobile-img" alt="Image Jane Johnston" style="-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; display: block; max-width: 100%; line-height: 100%; height: auto; width: 173px;" height="auto" width="173" /></a>
+                                                                </div>
+                                                              </center></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="primary-font name" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;font-size: 18px;color: #2c4f5c;padding-top: 15px;padding-right: 0;padding-bottom: 10px;padding-left: 0;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;font-weight: bold;text-align: center;border-collapse: collapse;">
+                                                              <div class="mktoText" mktoname="Right Person Name" id="personName3d61bb030-a5e1-4fc7-b1c8-efc6f1c505b6">
+                                                                <div>
+                                                                  <span style="font-family: helvetica, arial, sans-serif; color: #404250;">Jane Johnston</span>
+                                                                </div>
+                                                              </div></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="secondary-font contacts" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-left: 10px;font-family:'Lato', Arial, sans-serif;line-height: 20px;text-align: center;color: #666666;padding-top: 0;padding-right: 10px;padding-bottom: 20px;font-size: 14px;border-collapse: collapse;">
+                                                              <div class="mktoText" mktoname="Right Person Info" id="personInfo3d61bb030-a5e1-4fc7-b1c8-efc6f1c505b6">
+                                                                <div>
+                                                                  <span style="font-family: helvetica, arial, sans-serif;">Worldly blonde Goddess who rules London</span>
+                                                                </div>
+                                                              </div></td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table> </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table> </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </center> </td>
+                                </tr>
+                              </tbody>
+                            </table> </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table id="teamac16060f-b845-45df-aa26-e5fe2660c97f" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule m_team" mktoname="Team-1">
+                      <tbody>
+                        <tr>
+                          <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;background-color:${teamBackgroundColor};" bgcolor="${teamBackgroundColor}" valign="top">
+                            <table class="table600" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                              <tbody>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${teamSpacer};font-size:${teamSpacer};" height="${teamSpacer}">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                    <center>
+                                      <table class="table3-3" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="600">
+                                        <tbody>
+                                          <tr>
+                                            <td class="primary-font title" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;margin-bottom: 0;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;margin-left: 0;font-size: 24px;text-align: center;padding-top: 20px;padding-right: 0;padding-bottom: 0;padding-left: 0;margin-top: 20px;margin-right: 0;color: #2c4f5c;border-collapse: collapse;">
+                                              <div class="mktoText" mktoname="Title" id="title4ac16060f-b845-45df-aa26-e5fe2660c97f">
+                                                <div></div>
+                                              </div></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </center> </td>
+                                </tr>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${teamSpacer2};font-size:${teamSpacer2};" height="${teamSpacer2}">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                    <center>
+                                      <table class="table3-3" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0" width="600">
+                                        <tbody>
+                                          <tr>
+                                            <td class="secondary-font subtitle" style="hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;-ms-text-size-adjust: 100%;font-family:'Lato', Arial, sans-serif;color: #2c4f5c;font-size: 14px;line-height: 23px;text-align: center;border-collapse: collapse;">
+                                              <div class="mktoText" mktoname="Subtitle" id="subtitle3ac16060f-b845-45df-aa26-e5fe2660c97f">
+                                                <div></div>
+                                              </div></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </center> </td>
+                                </tr>
+                                <tr>
+                                  <td class="padding-y" style="-moz-hyphens: none; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -ms-text-size-adjust: 100%; hyphens: none; padding-top: 30px; padding-bottom: 40px; padding-right: 0; padding-left: 0; border-collapse: collapse;">
+                                    <center>
+                                      <table class="table1-3" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="left" border="0" cellpadding="0" cellspacing="0" width="173">
+                                        <tbody>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;background-color:${teamBackgroundColor2};" bgcolor="${teamBackgroundColor2}">
+                                              <table class="contents" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                                      <center>
+                                                        <div style="display:inline-block" class="mktoImg mobile-img" mktoname="Team Member 1" id="teamMember1ac16060f-b845-45df-aa26-e5fe2660c97f" mktolockimgsize="true" mktolockimgstyle="true">
+                                                          <a><img src="http://pages.newtek.com/rs/900-QVC-131/images/FPO.png" class="mobile-img" style="-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; display: block; max-width: 100%; line-height: 100%; height: auto; width: 173px;" height="auto" width="173" /></a>
+                                                        </div>
+                                                      </center></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="primary-font name" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;font-size: 18px;color: #2c4f5c;padding-top: 15px;padding-right: 0;padding-bottom: 10px;padding-left: 0;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;font-weight: bold;text-align: center;border-collapse: collapse;">
+                                                      <div class="mktoText" mktoname="Left Person Name" id="personNameac16060f-b845-45df-aa26-e5fe2660c97f">
+                                                        <div>
+                                                          <span style="font-family: helvetica, arial, sans-serif; color: #404250;">Liam J. Hayter</span>
+                                                        </div>
+                                                      </div></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td class="secondary-font contacts" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-left: 10px;font-family:'Lato', Arial, sans-serif;line-height: 20px;text-align: center;color: #666666;padding-top: 0;padding-right: 10px;padding-bottom: 20px;font-size: 14px;border-collapse: collapse;">
+                                                      <div class="mktoText" mktoname="Left Person Info" id="personInfoac16060f-b845-45df-aa26-e5fe2660c97f">
+                                                        <div>
+                                                          <span style="font-family: helvetica, arial, sans-serif;">Workflow &amp; Solutions Architect, EMEA</span>
+                                                        </div>
+                                                      </div></td>
+                                                  </tr>
+                                                </tbody>
+                                              </table> </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table class="spacer" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="left" border="0" cellpadding="0" cellspacing="0" width="40">
+                                        <tbody>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;" height="40" width="100%"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table class="table1-3" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="left" border="0" cellpadding="0" cellspacing="0" width="173">
+                                        <tbody>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                              <table style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;background-color:${teamBackgroundColor3};" bgcolor="${teamBackgroundColor3}">
+                                                      <table class="contents" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                                              <center>
+                                                                <div style="display:inline-block" class="mktoImg mobile-img" mktoname="Team Member 2" id="teamMember2ac16060f-b845-45df-aa26-e5fe2660c97f" mktolockimgsize="true" mktolockimgstyle="true">
+                                                                  <a><img src="http://pages.newtek.com/rs/900-QVC-131/images/Janez-Zigon_Headshot-200x200.jpg" class="mobile-img" style="-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; display: block; max-width: 100%; line-height: 100%; height: auto; width: 173px;" height="auto" width="173" /></a>
+                                                                </div>
+                                                              </center></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="primary-font name" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;font-size: 18px;color: #2c4f5c;padding-top: 15px;padding-right: 0;padding-bottom: 10px;padding-left: 0;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;font-weight: bold;text-align: center;border-collapse: collapse;">
+                                                              <div class="mktoText" mktoname="Center Person Name" id="personName2ac16060f-b845-45df-aa26-e5fe2660c97f">
+                                                                <div>
+                                                                  <span>Janez Zigon</span>
+                                                                </div>
+                                                              </div></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="secondary-font contacts" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-left: 10px;font-family:'Lato', Arial, sans-serif;line-height: 20px;text-align: center;color: #666666;padding-top: 0;padding-right: 10px;padding-bottom: 20px;font-size: 14px;border-collapse: collapse;">
+                                                              <div class="mktoText" mktoname="Center Person Info" id="personInfo2ac16060f-b845-45df-aa26-e5fe2660c97f">
+                                                                <div>
+                                                                  <span style="font-family: helvetica, arial, sans-serif;">Regional Sales Manager, SEMEA</span>
+                                                                </div>
+                                                              </div></td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table> </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table> </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="left" border="0" cellpadding="0" cellspacing="0" width="1">
+                                        <tbody>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;" height="40" width="100%"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <table class="table1-3" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="right" border="0" cellpadding="0" cellspacing="0" width="173">
+                                        <tbody>
+                                          <tr>
+                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                              <table class="contents" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;background-color:${teamBackgroundColor4};" bgcolor="${teamBackgroundColor4}">
+                                                      <table style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                                              <center>
+                                                                <div style="display:inline-block" class="mktoImg mobile-img" mktoname="Team Member 3" id="teamMember3ac16060f-b845-45df-aa26-e5fe2660c97f" mktolockimgsize="true" mktolockimgstyle="true">
+                                                                  <a><img src="http://pages.newtek.com/rs/900-QVC-131/images/FPO.png" class="mobile-img" style="-ms-interpolation-mode: bicubic; outline: none; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; text-decoration: none; border-top-width: 0; display: block; max-width: 100%; line-height: 100%; height: auto; width: 173px;" height="auto" width="173" /></a>
+                                                                </div>
+                                                              </center></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="primary-font name" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;font-size: 18px;color: #2c4f5c;padding-top: 15px;padding-right: 0;padding-bottom: 10px;padding-left: 0;font-family:'Roboto Condensed','Arial Narrow', Arial, sans-serif;font-weight: bold;text-align: center;border-collapse: collapse;">
+                                                              <div class="mktoText" mktoname="Right Person Name" id="personName3ac16060f-b845-45df-aa26-e5fe2660c97f">
+                                                                <div>
+                                                                  <span style="color: #404250; font-family: helvetica, arial, sans-serif;">Marise Plater</span>
+                                                                </div>
+                                                              </div></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="secondary-font contacts" style="-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;-ms-text-size-adjust: 100%;padding-left: 10px;font-family:'Lato', Arial, sans-serif;line-height: 20px;text-align: center;color: #666666;padding-top: 0;padding-right: 10px;padding-bottom: 20px;font-size: 14px;border-collapse: collapse;">
+                                                              <div class="mktoText" mktoname="Right Person Info" id="personInfo3ac16060f-b845-45df-aa26-e5fe2660c97f">
+                                                                <div>
+                                                                  <span style="font-family: helvetica, arial, sans-serif;">Regional Sales Manager, UK &amp; Nordic</span>
+                                                                </div>
+                                                              </div></td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table> </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table> </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </center> </td>
+                                </tr>
+                              </tbody>
+                            </table> </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table id="free-text1cd53775-6db9-4064-9fbc-e08574c9799f" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule m_free-text" mktoname="Free-text-1">
+                      <tbody>
+                        <tr>
+                          <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;background-color:${freeTextBackgroundColor};" bgcolor="${freeTextBackgroundColor}" valign="top">
+                            <center>
+                              <table class="table600" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                                <tbody>
+                                  <tr>
+                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${freeTextSpacer};font-size:${freeTextSpacer};" height="${freeTextSpacer}">&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="secondary-font text" style="-moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none;font-family:'Lato', Arial, sans-serif;font-size: 15px;color: #666666;border-collapse: collapse;">
+                                      <div class="mktoText" mktoname="Text" id="text41cd53775-6db9-4064-9fbc-e08574c9799f">
+                                        <div>
+                                          <span style="color: #404250; font-size: 16px; font-family: helvetica, arial, sans-serif;">You’ll leave the 2019 NewTek EMEA Reseller Meeting with a whole new appreciation for NewTek IP workflow solutions. Space is limited, so please register today.<br /><br />The NewTek Team</span>
+                                        </div>
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${freeTextSpacer2};font-size:${freeTextSpacer2};" height="${freeTextSpacer2}">&nbsp;</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </center> </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table id="callToActiond1fffa06-3462-4d7e-bbfe-2b3c7d77ec04" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule m_callToAction" mktoname="Call To Action">
+                      <tbody>
+                        <tr>
+                          <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;background-color:${callToActionBackgroundColor};" bgcolor="${callToActionBackgroundColor}" valign="top">
+                            <center>
+                              <table class="table600" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                                <tbody>
+                                  <tr>
+                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${callToActionSpacer};font-size:${callToActionSpacer};" height="${callToActionSpacer}">&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="cta" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;">
+                                      <center>
+                                        <table style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0">
+                                          <tbody>
+                                            <tr>
+                                              <td style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;" align="center" bgcolor="${callToActionButtonBackgroundColor}"> <a href="${callToActionLink}" target="_blank" class="secondary-font button" style="-webkit-text-size-adjust:
+100%;-ms-text-size-adjust: 100%;-webkit-background-clip: padding-box;font-size: 14px;font-family:'Lato', Arial, sans-serif;color: #ffffff;padding-top: 12px;padding-right: 18px;padding-bottom: 12px;padding-left:
+18px;border-top-width:${callToActionBorderSize};border-right-width:${callToActionBorderSize};border-bottom-width:${callToActionBorderSize};border-left-width:${callToActionBorderSize};background-clip: padding-box;border-right-style: solid;border-bottom-style: solid;border-left-style:
+solid;border-top-color:${callToActionBorderColor};border-right-color:${callToActionBorderColor};border-bottom-color:${callToActionBorderColor};border-left-color:${callToActionBorderColor};display: inline-block;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;-moz-background-clip: padding;border-top-style: solid;text-decoration:
+none;background-color:${callToActionButtonBackgroundColor};">${callToActionLinkText}</a> </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </center> </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${callToActionSpacer2};font-size:${callToActionSpacer2};" height="${callToActionSpacer2}">&nbsp;</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </center> </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table id="free-text" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse;" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="mktoModule m_free-text" mktoname="Free-text">
+                      <tbody>
+                        <tr>
+                          <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;background-color:${freeTextBackgroundColor};" bgcolor="${freeTextBackgroundColor}" valign="top">
+                            <center>
+                              <table class="table600" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto;" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                                <tbody>
+                                  <tr>
+                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${freeTextSpacer};font-size:${freeTextSpacer};" height="${freeTextSpacer}">&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="secondary-font text" style="-moz-hyphens: none;-webkit-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-ms-text-size-adjust: 100%;hyphens: none;font-family:'Lato', Arial, sans-serif;font-size: 15px;color: #666666;border-collapse: collapse;">
+                                      <div class="mktoText" mktoname="Text" id="text4">
+                                        <p><span style="color: #333333; font-size: 12px; font-family: arial, helvetica, sans-serif;">2019 NewTek, Inc. All rights reserved. NDI, TriCaster, 3Play, TalkShow, Video Toaster, LightWave 3D, and Broadcast Minds are registered trademarks of NewTek, Inc. MediaDS, Connect Spark, LiveGraphics, LightWave, and ProTek are trademarks and/or service marks of NewTek, Inc.</span></p>
+                                      </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;line-height:${freeTextSpacer2};font-size:${freeTextSpacer2};" height="${freeTextSpacer2}">&nbsp;</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </center> </td>
+                        </tr>
+                      </tbody>
+                    </table></td>
+                </tr>
+              </tbody>
+            </table> </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Outer Table END -->
+  </body>
+</html>
